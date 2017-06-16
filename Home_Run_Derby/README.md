@@ -26,6 +26,7 @@ I will upload pictures at a later date.
 ## What is unfinished
 
 * Player animations do not work very well.
+* The ball stays on the field after the hit, then disappears on the next pitch.
 
 ## What would I like to expand on?
 
