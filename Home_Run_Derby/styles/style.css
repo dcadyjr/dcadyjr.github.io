@@ -1,0 +1,270 @@
+#container{
+	position: relative;
+}
+
+#myCanvas {
+	
+	background-image: url(../images/field.png);
+	background-size: 1200px 750px;
+	background-repeat: no-repeat;
+	height: 750px;
+	width: 1200px;
+	position: absolute;
+	z-index: 0;
+}
+
+.scoreboard{
+	background: black;
+	width: 391px;
+	height: 169px;
+	z-index: 5;
+	position: absolute;
+	top: 55px;
+	left: 34%;
+}
+
+.infoScreen{
+	height: 85px;
+	width: 221px;
+	background-color: rgb(35, 69, 21);
+	float: left;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ .currentScore{
+ 	height: 85px;
+	width: 170px;
+	background-color: rgb(35, 69, 21);
+	float: right;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+ }
+
+ .playResult {
+ 	height: 73px;
+	width: 391px;
+	background-image: url(../images/scoreboardback.jpg);
+	background-size: 100px 100px;
+	margin-top: 20px;
+	clear: both;
+	color: rgb(242, 215, 38);
+	font-family: 'VT323', monospace;
+	font-size: 40px;
+	text-align: center;
+
+ }
+
+.innerboards {
+	height: 38px;
+	width: 77px;
+	background-color: rgb(35, 69, 21);
+	color: white;
+	display: inline-block;
+	margin-bottom: -9px;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+#outValue{
+	font-family: "Wallpoet", cursive;
+	color: rgb(242, 215, 38);
+	line-height: 38px;
+	margin-left: 5px;
+	width: 35px;
+	font-size: 24px;
+	border: 1px solid black;
+}
+#out{
+	font-family: 'Heebo', sans-serif;
+	line-height: 7px;
+	text-align: left;
+	margin-left: 5px;
+}
+#homerun{
+	font-family: 'Heebo', sans-serif;
+	line-height: 7px;
+	text-align: left;
+	margin-left: 5px;
+}
+#homerunValue{
+	font-family: "Wallpoet", cursive;
+	color: rgb(242, 215, 38);
+	line-height: 38px;
+	margin-left: 5px;
+	width: 35px;
+	font-size: 24px;
+	border: 1px solid black;
+}
+#highscoreValue{
+	font-family: "Wallpoet", cursive;
+	color: rgb(242, 215, 38);
+	line-height: 50px;
+	font-size: 24px;
+	width: 35px;
+	border: 1px solid black;
+	
+}
+#atbat{
+	font-family: 'Heebo', sans-serif;
+	padding-left: 5px;
+	text-align: left;
+	line-height: 8px;
+	margin-left: 10px;
+	
+}
+#highscore{
+	font-family: 'Heebo', sans-serif;
+	padding-left: 5px;
+	text-align: left;
+	margin-left: 10px;
+	
+}
+#name{
+	font-family: "Wallpoet", cursive;
+	line-height: 7px;
+	width: 120px;
+	border: 1px solid black;
+	color: rgb(242, 215, 38);
+	font-size: 16px;
+}
+.reset {
+	display: none;
+	font-family: "Days One", sans-serif;
+	top: 392px;
+	left: 45%;
+	z-index: 3;
+	position: absolute;
+	background: -moz-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	background: -webkit-gradient(left top, left bottom, color-stop(2%, rgba(3,43,104,1)), color-stop(45%, rgba(3,43,104,0.98)), color-stop(88%, rgba(30,109,200,0.96)), color-stop(99%, rgba(30,109,200,0.96)), color-stop(99%, rgba(30,109,200,1)));
+	background: -webkit-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	background: -o-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	background: -ms-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	-webkit-border-radius: 51;
+	-moz-border-radius: 51;
+	border-radius: 51px;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	border: solid #1f628d 0px;
+	text-decoration: none;
+}
+
+.reset:hover {
+    text-shadow: 0px 0px 4px white;
+}
+
+#pitcher {
+	left: 594px;
+	top: 571px;
+	width: 25px;
+	height: 26px;
+	background-image: url(../images/BaseballSheet1.png);
+	z-index: 3;
+	position: absolute;
+	background-position: 295px -5px;
+}
+
+#batter{
+	left: 614px;
+	top: 625px;
+	width: 25px;
+	height: 34px;
+	background-image: url(../images/BaseballSheet1.png);
+	z-index: 3;
+	position: absolute;
+	background-position: 273px -388px;
+}
+
+.swingAnimate{
+	left: 614px;
+	top: 625px;
+	width: 25px;
+	height: 34px;
+	background-image: url(../images/BaseballSheet1.png);
+	z-index: 3;
+	position: absolute;
+	animation-name:  hitIt;
+	animation-duration: .5s;
+	animation-timing-function: steps(4, start);
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1; 
+}
+
+@keyframes hitIt {
+	0% {background-position: 273px -388px;}
+	33% {background-position: 293px -388px;}
+	66% {background-position: 313px -388px;}
+	100% {background-position: 344px -388px;}
+}
+
+.startScreen {
+	background: rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+
+}
+
+.instructions {
+	font-family: "Days One", sans-serif;
+	width: 500px;
+    height: 280px;
+	background: -moz-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	background: -webkit-gradient(left top, left bottom, color-stop(2%, rgba(3,43,104,1)), color-stop(45%, rgba(3,43,104,0.98)), color-stop(88%, rgba(30,109,200,0.96)), color-stop(99%, rgba(30,109,200,0.96)), color-stop(99%, rgba(30,109,200,1)));
+	background: -webkit-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	background: -o-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+	background: -ms-linear-gradient(top, rgba(3,43,104,1) 2%, rgba(3,43,104,0.98) 45%, rgba(30,109,200,0.96) 88%, rgba(30,109,200,0.96) 99%, rgba(30,109,200,1) 99%);
+    opacity: 1;
+    margin-top: 28px;
+    margin-left: 325px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.startbtn {
+	font-family: "Days One", sans-serif;
+	background-image: url(../images/grass.jpg);
+	margin-top: 68px;
+    margin-left: -118px;
+    position: absolute;
+    height: 57px;
+    width: 100px;
+    border-radius: 11px;
+    color: white;
+    font-size: 20px;
+}
+.startbtn:hover{
+	text-shadow: 0px 0px 4px white;
+}
+
+.blinkerText {
+	animation: blinker 2s linear 2;
+}
+
+@keyframes blinker {
+	50% {opacity: 0; }
+}
+.startimg{
+	width: 50%;
+    height: 35%;
+    margin-left: 270px;
+    margin-top: 100px;
+}
+
+#playerName {
+	margin-left: 13px;
+    margin-top: 20px;
+    width: 127px;
+    height: 20px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Home Run Derby!</title>
+</head>
+<body>
+	<audio src="media/TakeMeOutToTheBallgame.mp3" autoplay></audio>
+
+	<div id="batter">
+	</div>
+
+	<!-- <div id="teams">
+	</div> --><!-- for API stuff -->
+	
+
+	<div id="batter">
+	</div>
+
+	<div id="container">
+		<canvas id="myCanvas" width="1200" height="750"></canvas>
+
+		<div class="scoreboard">
+			<div class ="infoScreen">
+				<div id="atbat" class="innerboards">
+					<p>AT BAT</p>
+				</div>
+				<div id="name" class="innerboards">
+					<p class="namePTag"></p>
+				</div>
+				<div id="highscore" class="innerboards">
+					<p>HIGH SCORE</p>
+				</div>
+				<div id="highscoreValue" class="innerboards">
+					
+				</div>
+			</div>
+			<div class="currentScore">
+				<div id="homerun" class="innerboards">
+					<p>HOME RUNS</p>
+				</div>
+				<div id=homerunValue class="innerboards">
+					
+				</div>
+				<div id="out" class="innerboards">
+					<p>OUTS</p>
+				</div>
+				<div id="outValue" class="innerboards">
+					
+				</div>
+			</div>
+			<div class="playResult">
+				
+			</div>
+		</div>
+
+		<button type="button" class="reset">play again</button>
+	</div>
+	<div class="startScreen">
+		<img src="images/homerun-derby-pic.jpg" class="startimg">
+		<div class="instructions">
+			<h3>Welcome to Home Run Derby!</h3>  
+			<p>Press "h" to hit.</p> 
+			<p>See how often you knock it out of the park!</p>
+			<input id="playerName" placeholder="Enter your name."  type="text" autofocus="autofocus">
+			<button type="button" class="startbtn">Play Ball!</button>
+		</div>
+	</div>
+	<script src="./scripts/pitcher.js"></script>
+	<script src="./scripts/main.js"></script>
+</body>
+</html>
