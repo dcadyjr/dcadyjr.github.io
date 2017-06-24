@@ -253,23 +253,24 @@ $(".reset").click(function(){//grabs the reset button and put a click listener o
   });
 
 
-document.addEventListener("keydown", function(){//adds the event listener looking for keydown
-    var key = event.which;//variable that holds the key that is pressed
+document.addEventListener("keydown", function(event){//adds the event listener looking for keydown
+    var key = event.key;//variable that holds the key that is pressed
+    console.log(event.key);
     var swingTime = ball.position.y;//a variable that holds the position of ball position y
-      if (key === 72 && swingTime >= 642 && swingTime <= 644) {//conditional for HR. listens ff the h key is pressed while the ball is between 642 and 644 pixels
+      if (key === 'h' && swingTime >= 642 && swingTime <= 644) {//conditional for HR. listens ff the h key is pressed while the ball is between 642 and 644 pixels
           
           homeRunAction();
 
-      } else if (key === 72 && swingTime === 640 || key === 72 && swingTime === 641 || key === 72 && swingTime === 645 || key === 72 && swingTime === 646) {//conditional for an out.  looks to see if the H key is pressed while the ball is at certain pixels.
+      } else if (key === 'h' && swingTime === 640 || key === 'h' && swingTime === 641 || key === 'h' && swingTime === 645 || key === 'h' && swingTime === 646) {//conditional for an out.  looks to see if the H key is pressed while the ball is at certain pixels.
         
           outAction();
 
         //puts the message in the play result part of scoreboard
-      } else if (key === 72 && swingTime <= 639 && swingTime > 630 || key === 72 && swingTime === 646) {//listens for the H key to be pressed while the ball is at or between certain pixels
+      } else if (key === 'h' && swingTime <= 639 && swingTime > 630 || key === 'h' && swingTime === 646) {//listens for the H key to be pressed while the ball is at or between certain pixels
           
           strikeAction();
 
-      } else if (key === 72) {//listens for the h key to be pressed
+      } else if (key === 'h') {//listens for the h key to be pressed
           hitAnimation ();//runs hit animation
       }
 })
@@ -312,10 +313,11 @@ var animateCanvas = function(){//function to animate the canvas
 
 //       teamCodes = a.team_all.queryResults.row[i].team_code;
 //       teamNames = a.team_all.queryResults.row[i].name_display_full;
-//         console.log(teams, teamNames);
+//         console.log(teamCodes, teamNames);
 
 //         var ul = $("<ul>");
-//         ul.append("<li><a href="'http://mlb.mlb.com/shared/properties/style/bal.json'">" + teamNames + "</a></li>");
+//         ul.append("<li>" + teamNames + "</li>");
+//         // ul.append("<li><a href="'http://mlb.mlb.com/shared/properties/style/bal.json'> + teamNames + "</a></li>")
 //         $("#teams").append(ul);
 
 //     }
@@ -323,8 +325,10 @@ var animateCanvas = function(){//function to animate the canvas
 
 // })
 
-// url: <a href="http://mlb.mlb.com/shared/properties/style/bal.json">
+// // url: <a href="http://mlb.mlb.com/shared/properties/style/bal.json">
+
+//http://m.orioles.mlb.com/assets/images/4/4/0/111261440/cuts/BAL_1x_5dk2mwfk_hr6p7zsm.png
 
 
-// ul.append("<li>" + teamNames+ "</li>");
+// // ul.append("<li>" + teamNames+ "</li>");
 

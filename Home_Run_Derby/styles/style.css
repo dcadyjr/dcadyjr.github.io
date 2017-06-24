@@ -20,7 +20,7 @@
 	z-index: 5;
 	position: absolute;
 	top: 55px;
-	left: 34%;
+	left: 410px;
 }
 
 .infoScreen{
@@ -256,10 +256,11 @@
 	50% {opacity: 0; }
 }
 .startimg{
-	width: 50%;
-    height: 35%;
-    margin-left: 270px;
+	width: 600px;
+    height: 300px;
+    margin-left: 275px;
     margin-top: 100px;
+
 }
 
 #playerName {
